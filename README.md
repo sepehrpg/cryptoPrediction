@@ -1,14 +1,31 @@
-# Bitcoin Price Prediction Project Documentation
+# Bitcoin Price Prediction Project 
+---
+
+## 🚀 Project Vision: Toward a Robo-Advisory Platform
+
+This Bitcoin prediction project is a stepping stone toward a larger vision I've been pursuing through my earlier personal finance app — [Dinaromall](https://sepehrpg.ir/portfolio/dinaromall).
+
+The ultimate goal is to build an AI-powered personal financial assistant — a Robo-Adviser that empowers users to:
+
+- Manage their day-to-day finances
+- Receive data-driven investment insights
+- Predict market trends in crypto and beyond
+- Make informed, personalized investment decisions
+
+This is why I chose Bitcoin price forecasting for this machine learning project. It serves as a proof-of-concept for integrating predictive models into a larger intelligent platform that can one day support financial well-being and investment planning for everyday users.
+
+While my current knowledge in areas like model tuning, feature engineering, and data pipelines is still developing, each step I take is bringing me closer to that vision.
+
+
+
 
 ## Overview
-
-This Jupyter Notebook project is focused on **Bitcoin price prediction** using four different machine learning models:
-
+The core implementation of this Bitcoin price prediction project is available in the [BtcPrediction Notebook](https://github.com/sepehrpg/cryptoPrediction/blob/main/BtcPrediction.ipynb) and modular Python files within this repository. It combines 3 machine learning models into a unified, extensible pipeline:
 - Linear Regression
 - XGBoost
 - LSTM (Long Short-Term Memory)
 
-The dataset is collected using the Yahoo Finance API (`yfinance`) and includes 5 years of historical BTC-USD OHLCV data.
+The dataset is collected using the Yahoo Finance API (`yfinance`).
 
 The project follows a modular structure, with each component such as data collection, preprocessing, modeling, and evaluation defined in separate Python scripts.
 
@@ -109,6 +126,7 @@ Possible reasons:
 - Possibly **data leakage** or **misaligned data**
 
 Despite efforts to improve the model (as noted during project development), the current results do not reflect XGBoost's potential.
+For a deeper understanding of the project’s limitations, see the [Personal Reflection](#-personal-reflection) section below.
 
 > ✅ *Conclusion:* While current performance is weak, XGBoost **can be a strong candidate** in real projects — but only when properly tuned with rich feature sets.
 
@@ -170,22 +188,12 @@ Common metrics across models:
 ---
 
 ## 📌 Conclusion
-
-- **Best Performing (Locally)**: Linear Regression — high R² but unrealistic in practice.
+- **Not Practical For Live Market Scenarios.**: Linear Regression
 - **Most Practical (Real-World)**: LSTM — captures time dependencies, scalable.
 - **Underperformer**: XGBoost — requires better tuning and features.
 
 ---
 
-## ✅ Suggestions for Improvement
-
-- Apply **hyperparameter tuning** for all models (especially LSTM & XGBoost).
-- Use **cross-validation** and **time-series validation**.
-- Add more **feature engineering** or external indicators.
-- Consider longer history or **higher frequency** data.
-- Save and load models using `joblib` or `pickle`.
-
----
 
 ## 📄 Final Notes
 
@@ -210,15 +218,9 @@ As someone who is relatively new to the field of machine learning and time-serie
 - 🔄 Handling **sequence data** optimally (especially for LSTM)
 - 📊 Understanding the impact of **data leakage** or misalignment
 
-For example:
-
-- **Linear Regression**, despite showing the highest R² score, is not truly suitable for capturing the complexity and volatility of cryptocurrency data.
-- Both **Random Forest** and **XGBoost** have much room for improvement, especially through proper tuning and better features.
-- Even the **LSTM model**, although promising, can benefit from more robust training, longer sequences, and additional input data such as market sentiment or macroeconomic factors.
-
 ---
 
-This project is just the beginning. Next steps:
+This project is just the beginning. In the future, I plan to:
 
 - Enhance models with sentiment analysis on financial news.
 - Add advanced models like CNN-LSTM and hybrid methods.
