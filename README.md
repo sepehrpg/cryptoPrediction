@@ -195,16 +195,6 @@ Common metrics across models:
 ---
 
 
-## 📄 Final Notes
-
-- Each model is encapsulated in its own class.
-- Evaluation is based on real-world values by reversing scaling.
-- The notebook includes visualizations of actual vs. predicted prices.
-
-> This project provides a clean, extendable pipeline for experimenting with various regression techniques on time-series data, particularly in financial markets.
-
----
-
 ## 📜 Personal Reflection
 
 As someone who is relatively new to the field of machine learning and time-series forecasting, I openly acknowledge that my **lack of deep knowledge in several key areas** has affected the final performance of this project.
