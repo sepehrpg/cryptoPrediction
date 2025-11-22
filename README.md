@@ -3,7 +3,7 @@
 
 ## 🚀 Project Vision: Toward a Robo-Advisory Platform
 
-This Bitcoin prediction project is a stepping stone toward a larger vision I've been pursuing through my earlier personal finance app — [Dinaromall](https://sepehrpg.ir/portfolio/dinaromall).
+This Bitcoin prediction project is a stepping stone toward a larger vision I've been pursuing through my earlier personal finance app — [Dinaromall](https://sepehrpg.ir/portfolio/dinaromall), And [Daricx](https://github.com/sepehrpg/daricx).
 
 The ultimate goal is to build an AI-powered personal financial assistant — a Robo-Adviser that empowers users to:
 
